@@ -237,7 +237,8 @@ right: -100%;
 
 .menu .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+    grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
 }
 
@@ -284,6 +285,7 @@ right: -100%;
 .product .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* grid-template-columns: repeat(3,1fr); */
     gap: 1.5rem;
 }
 
@@ -631,9 +633,6 @@ right: -100%;
 html{
     font-size: 55%;
 }
-.header{
-    padding: 1.5rem 2rem;
-}
 .header .logo img{
 height: 7rem;
 }
@@ -642,7 +641,11 @@ section{
 }
 .products .box-container .box .box-head .name{
     font-size: 3.4rem;
-} 
+}
+.menu .box-container {
+    grid-template-columns: 1fr;
+}
+
 }
 @media (max-width: 768px){
 .header #menu-btn{
